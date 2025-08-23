@@ -1,0 +1,51 @@
+/* Import some royal fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Merriweather&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Merriweather", serif;
+  background-color: #0a0f2d; /* Deep navy */
+  color: #f8f5e4; /* Ivory text */
+  line-height: 1.6;
+}
+
+/* Headings with royal touch */
+h1,
+h2,
+h3 {
+  font-family: "Cinzel", serif;
+  color: #d4af37; /* Gold */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5em;
+}
+
+/* Links with luxury feel */
+a {
+  color: #d4af37;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ffd700; /* Brighter gold */
+}
+
+/* Buttons */
+.button {
+  background: linear-gradient(135deg, #d4af37, #ffd700);
+  color: #0a0f2d;
+  font-family: "Cinzel", serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
