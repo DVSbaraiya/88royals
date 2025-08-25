@@ -49,3 +49,167 @@ a:hover {
 .button:hover {
   transform: translateY(-2px);
 }
+
+#header-carousel h1 {
+  font-size: 56px;
+}
+
+#amenities-carousel .testimonial-item {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+#amenities-carousel .testimonial-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+#amenities-carousel .testimonial-item:hover img {
+  transform: scale(1.1);
+}
+#amenities-carousel .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+#amenities-carousel .overlay h5 {
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#amenities-carousel .testimonial-item:hover .overlay {
+  opacity: 1;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.whatsapp-float:hover {
+  background-color: #1ebe5c;
+  transform: scale(1.1);
+}
+
+/* Clean Form Box */
+.royal-form {
+  background: #111; /* deep dark for contrast */
+  padding: 35px;
+  border-radius: 12px;
+  border: 1px solid #2c2c2c;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Inputs */
+.royal-form .form-control {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: #f5f5f5;
+  border-radius: 8px;
+  padding: 12px 14px;
+  transition: all 0.3s ease;
+}
+.royal-form .form-control:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 6px rgba(212, 175, 55, 0.4);
+  background: #222;
+}
+
+/* Labels */
+.royal-form label {
+  color: #bbb;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Simple Royal Button */
+.btn-royal {
+  background: #d4af37;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #111;
+  padding: 12px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.btn-royal:hover {
+  background: #d4af37;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.btn-social {
+  background-color: #b8860b;
+}
+
+.header-logo {
+  width: 120px;
+}
+
+@media (max-width: 576px) {
+  .header-logo {
+    width: 90px;
+  }
+
+  #header-carousel h1 {
+    font-size: 28px;
+  }
+
+  .royal-form {
+    padding: 18px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .header-logo {
+    width: 90px;
+  }
+
+  #header-carousel h1 {
+    font-size: 48px;
+  }
+
+  .royal-form {
+    padding: 18px;
+  }
+}
+
+/* Laptop screen media queries */
+@media (min-width: 769px) and (max-width: 1140px) {
+  .header-logo {
+    width: 100px;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 16px;
+  }
+
+  #header-carousel h1 {
+    font-size: 38px;
+  }
+}
