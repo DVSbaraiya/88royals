@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-  --primary: #ffd700;
+  --primary: #eab76d;
   --light: #f1f8ff;
   --dark: #0f172b;
 }
@@ -40,11 +40,6 @@
   font-weight: 500;
   text-transform: uppercase;
   transition: 0.5s;
-}
-
-.btn.btn-primary,
-.btn.btn-secondary {
-  color: #ffffff;
 }
 
 .btn-square {
@@ -224,6 +219,7 @@
   position: relative;
   height: 100%;
   min-height: 500px;
+  border-radius: 10px;
   background: linear-gradient(rgba(15, 23, 43, 0.1), rgba(15, 23, 43, 0.1)),
     url(../img/amenities/012.webp);
   background-position: center center;
@@ -257,7 +253,7 @@
   display: block;
   width: 100px;
   height: 100px;
-  background: var(--primary);
+  background: #ff5f27;
   border-radius: 50%;
   animation: pulse-border 1500ms ease-out infinite;
 }
@@ -272,7 +268,7 @@
   display: block;
   width: 100px;
   height: 100px;
-  background: var(--primary);
+  background: #ff5f27;
   border-radius: 50%;
   transition: all 200ms;
 }
@@ -423,7 +419,7 @@
 }
 
 .footer {
-  background-color: #000;
+  background-color: #732c13;
 }
 
 .footer .btn.btn-social {

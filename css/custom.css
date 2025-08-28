@@ -4,7 +4,7 @@
 body {
   margin: 0;
   font-family: "Merriweather", serif;
-  background-color: #121212;
+  background-color: #fff;
   line-height: 1.6;
 }
 
@@ -13,7 +13,7 @@ h1,
 h2,
 h3 {
   font-family: "Cinzel", serif;
-  color: #ffd700;
+  color: #ff5f27;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 0.5em;
@@ -21,22 +21,22 @@ h3 {
 
 /* Links with luxury feel */
 a {
-  color: #ffd700;
+  color: #ff5f27;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 a:hover {
-  color: #ffd700; /* Brighter gold */
+  color: #ff5f27; /* Brighter gold */
 }
 
 p {
-  color: #cccccc;
+  color: #000;
 }
 
 /* Buttons */
 .button {
-  background: linear-gradient(135deg, #ffd700, #ffd700);
+  background: linear-gradient(135deg, #ff5f27, #ff5f27);
   color: #0a0f2d;
   font-family: "Cinzel", serif;
   font-weight: bold;
@@ -119,11 +119,10 @@ p {
 
 /* Clean Form Box */
 .royal-form {
-  background: #111; /* deep dark for contrast */
+  background: #000;
   padding: 35px;
   border-radius: 12px;
-  border: 1px solid #2c2c2c;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  border: 3px solid #ff5f27;
 }
 
 /* Inputs */
@@ -136,7 +135,7 @@ p {
   transition: all 0.3s ease;
 }
 .royal-form .form-control:focus {
-  border-color: #ffd700;
+  border-color: #ff5f27;
   box-shadow: 0 0 6px rgba(212, 175, 55, 0.4);
   background: #222;
 }
@@ -150,7 +149,7 @@ p {
 
 /* Simple Royal Button */
 .btn-royal {
-  background: #ffd700;
+  background: #ff5f27;
   border: none;
   border-radius: 8px;
   font-weight: 600;
@@ -161,14 +160,14 @@ p {
   transition: all 0.3s ease;
 }
 .btn-royal:hover {
-  background: #ffd700;
+  background: #ff5f27;
   color: #fff;
   transform: translateY(-1px);
 }
 
 .btn-social {
-  background-color: #ffd700;
-  color: #000 !important;
+  background-color: #ffffff;
+  color: #ff5f27 !important;
 }
 
 .header-logo {
@@ -232,7 +231,7 @@ p {
 }
 
 .number-box i {
-  color: #ffd700;
+  color: #eab76d;
 }
 
 .number-box p {
@@ -273,4 +272,60 @@ p {
 
 .about-slider img {
   border-radius: 20px;
+}
+
+.footer-section-contact p,
+.footer-section-contact a {
+  color: #fff;
+}
+
+.footer-links ul {
+  padding: 0px;
+  list-style: none;
+}
+
+.footer-links ul li a {
+  color: #fff !important;
+}
+
+.footer-links li {
+  padding: 5px 0px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #732c13 !important;
+}
+
+.download-btn {
+  color: #ff5f27 !important;
+  background-color: #fff;
+  border: 2px solid #ff5f27;
+}
+
+.download-btn:hover {
+  background-color: #ff5f27;
+  color: #fff !important;
+  border: 2px solid transparent;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary {
+  color: #ffffff !important;
+  background-color: #ff5f27;
+  border: 2px solid transparent;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-secondary:hover {
+  background-color: #fff;
+  color: #ff5f27 !important;
+  border: 2px solid #ff5f27;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next,
+.amenities-carousel .owl-nav .owl-prev,
+.amenities-carousel .owl-nav .owl-next {
+  background-color: #ff5f27;
 }
