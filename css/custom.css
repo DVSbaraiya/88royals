@@ -4,8 +4,7 @@
 body {
   margin: 0;
   font-family: "Merriweather", serif;
-  background-color: #0a0f2d; /* Deep navy */
-  color: #f8f5e4; /* Ivory text */
+  background-color: #121212;
   line-height: 1.6;
 }
 
@@ -14,7 +13,7 @@ h1,
 h2,
 h3 {
   font-family: "Cinzel", serif;
-  color: #d4af37; /* Gold */
+  color: #ffd700;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 0.5em;
@@ -22,7 +21,7 @@ h3 {
 
 /* Links with luxury feel */
 a {
-  color: #d4af37;
+  color: #ffd700;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -31,9 +30,13 @@ a:hover {
   color: #ffd700; /* Brighter gold */
 }
 
+p {
+  color: #cccccc;
+}
+
 /* Buttons */
 .button {
-  background: linear-gradient(135deg, #d4af37, #ffd700);
+  background: linear-gradient(135deg, #ffd700, #ffd700);
   color: #0a0f2d;
   font-family: "Cinzel", serif;
   font-weight: bold;
@@ -133,7 +136,7 @@ a:hover {
   transition: all 0.3s ease;
 }
 .royal-form .form-control:focus {
-  border-color: #d4af37;
+  border-color: #ffd700;
   box-shadow: 0 0 6px rgba(212, 175, 55, 0.4);
   background: #222;
 }
@@ -147,7 +150,7 @@ a:hover {
 
 /* Simple Royal Button */
 .btn-royal {
-  background: #d4af37;
+  background: #ffd700;
   border: none;
   border-radius: 8px;
   font-weight: 600;
@@ -158,13 +161,14 @@ a:hover {
   transition: all 0.3s ease;
 }
 .btn-royal:hover {
-  background: #d4af37;
+  background: #ffd700;
   color: #fff;
   transform: translateY(-1px);
 }
 
 .btn-social {
-  background-color: #b8860b;
+  background-color: #ffd700;
+  color: #000 !important;
 }
 
 .header-logo {
@@ -212,4 +216,61 @@ a:hover {
   #header-carousel h1 {
     font-size: 38px;
   }
+}
+
+.number-box {
+  background-color: #fff;
+  box-shadow: -2px 2px 15px 1px #1c0a0a;
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+
+.number-box h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.number-box i {
+  color: #ffd700;
+}
+
+.number-box p {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+#facts {
+  background-image: url("../img/amenities/005.webp");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+#facts::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Dark overlay for better text visibility */
+  z-index: -1;
+}
+
+.btn {
+  color: #000 !important;
+  border-radius: 30px;
+}
+
+.about-slider img {
+  border-radius: 20px;
 }

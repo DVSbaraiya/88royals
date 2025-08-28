@@ -126,6 +126,23 @@
         }
     });
 
+    $(".about-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1000,
+        margin: 25,
+        dots: false,
+        loop: true,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 1
+            }
+        }
+    });
+
     $('.amenity-popup').magnificPopup({
         type: 'image',
         gallery: {
