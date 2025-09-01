@@ -13,7 +13,7 @@ h1,
 h2,
 h3 {
   font-family: "Cinzel", serif;
-  color: #ff5f27;
+  color: #eab76d;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 0.5em;
@@ -21,13 +21,13 @@ h3 {
 
 /* Links with luxury feel */
 a {
-  color: #ff5f27;
+  color: #eab76d;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 a:hover {
-  color: #ff5f27; /* Brighter gold */
+  color: #eab76d; /* Brighter gold */
 }
 
 p {
@@ -36,7 +36,7 @@ p {
 
 /* Buttons */
 .button {
-  background: linear-gradient(135deg, #ff5f27, #ff5f27);
+  background: linear-gradient(135deg, #eab76d, #eab76d);
   color: #0a0f2d;
   font-family: "Cinzel", serif;
   font-weight: bold;
@@ -122,7 +122,7 @@ p {
   background: #000;
   padding: 35px;
   border-radius: 12px;
-  border: 3px solid #ff5f27;
+  border: 3px solid #eab76d;
 }
 
 /* Inputs */
@@ -135,7 +135,7 @@ p {
   transition: all 0.3s ease;
 }
 .royal-form .form-control:focus {
-  border-color: #ff5f27;
+  border-color: #eab76d;
   box-shadow: 0 0 6px rgba(212, 175, 55, 0.4);
   background: #222;
 }
@@ -149,7 +149,7 @@ p {
 
 /* Simple Royal Button */
 .btn-royal {
-  background: #ff5f27;
+  background: #eab76d;
   border: none;
   border-radius: 8px;
   font-weight: 600;
@@ -160,14 +160,14 @@ p {
   transition: all 0.3s ease;
 }
 .btn-royal:hover {
-  background: #ff5f27;
+  background: #eab76d;
   color: #fff;
   transform: translateY(-1px);
 }
 
 .btn-social {
   background-color: #ffffff;
-  color: #ff5f27 !important;
+  color: #eab76d !important;
 }
 
 .header-logo {
@@ -267,7 +267,7 @@ p {
 
 .btn {
   color: #000 !important;
-  border-radius: 30px;
+  border-radius: 5px;
 }
 
 .about-slider img {
@@ -294,38 +294,162 @@ p {
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #732c13 !important;
+  color: #eab76d !important;
 }
 
 .download-btn {
-  color: #ff5f27 !important;
+  color: #000 !important;
   background-color: #fff;
-  border: 2px solid #ff5f27;
+  border: 2px solid #eab76d;
 }
 
 .download-btn:hover {
-  background-color: #ff5f27;
-  color: #fff !important;
+  background-color: #eab76d;
+  color: #000 !important;
   border: 2px solid transparent;
 }
 
 .btn.btn-primary,
 .btn.btn-secondary {
-  color: #ffffff !important;
-  background-color: #ff5f27;
+  color: #000 !important;
+  background-color: #eab76d;
   border: 2px solid transparent;
 }
 
 .btn.btn-primary:hover,
 .btn.btn-secondary:hover {
   background-color: #fff;
-  color: #ff5f27 !important;
-  border: 2px solid #ff5f27;
+  color: #000 !important;
+  border: 2px solid #eab76d;
 }
 
 .testimonial-carousel .owl-nav .owl-prev,
 .testimonial-carousel .owl-nav .owl-next,
 .amenities-carousel .owl-nav .owl-prev,
 .amenities-carousel .owl-nav .owl-next {
-  background-color: #ff5f27;
+  background-color: #eab76d;
+}
+
+.gallery-img {
+  width: 100%;
+  border-radius: 15px; /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05); /* Zoom on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-box {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+}
+
+.gallery-box:hover .gallery-img {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 0 0 15px 15px;
+}
+
+.overlay h5 {
+  color: #fff;
+}
+
+.sidetextSlider {
+  margin-left: 100px;
+  text-align: start;
+  width: 700px;
+}
+
+.modal-lg {
+  max-width: 900px; /* wider modal */
+}
+
+.sidetextSlider h2 {
+  font-size: 42px;
+  text-align: start;
+}
+
+@media (max-width: 768px) {
+  .modal-lg {
+    max-width: 95%; /* responsive on mobile */
+  }
+  .modal-content img {
+    max-height: 220px; /* keep image smaller on mobile */
+    object-fit: cover;
+  }
+
+  .sidetextSlider {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: start;
+    width: auto;
+  }
+
+  .sidetextSlider h2 {
+    font-size: 24px;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .download-btn {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+.custom-input {
+  border-radius: 5px;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.custom-input::placeholder {
+  color: #999;
+  font-size: 15px;
+}
+
+.custom-input:focus {
+  border-color: #c89d5a; /* gold accent */
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(200, 157, 90, 0.4);
+}
+
+.custom-btn {
+  background-color: #c89d5a;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.custom-btn:hover {
+  background-color: #a87f3d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
