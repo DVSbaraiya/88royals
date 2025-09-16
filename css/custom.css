@@ -453,3 +453,31 @@ p {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
+.project-card-white {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+.project-card-white i {
+  color: #d4a762;
+  transition: transform 0.3s ease;
+}
+.project-card-white h6 {
+  color: #000;
+  font-weight: 600;
+}
+.project-card-white:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(212, 167, 98, 0.2);
+  border-color: #d4a762;
+}
+.project-card-white:hover i {
+  transform: scale(1.2);
+  color: #000;
+}
+.project-card-white:hover h6 {
+  color: #d4a762;
+}
